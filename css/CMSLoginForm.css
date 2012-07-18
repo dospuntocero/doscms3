@@ -1,4 +1,11 @@
+/* @override http://ga/dospuntoceroCMS/css/CMSLoginForm.css */
+
 /* @group clearfix */
+
+#Form_Form input.checkbox {
+	float: left;
+	width: 20px;
+}
 .cf:after,
 .container:after,
 .Actions:after {
