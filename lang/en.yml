@@ -1,0 +1,69 @@
+en:
+  AddContent:
+    BULKIMPORT: 'Import pages'
+    DELETEEXISTING: 'Clear out all existing content?'
+    PUBLISHALL: 'Publish everything after the import?'
+    SITEIMPORTED: '<p>Thanks! Your site tree has been imported.</p>'
+  BaseConfig:
+    CELLPHONE: Cellphone
+    COUNTRYNAME: 'Country Name'
+    EMAIL: Email
+    FACEBOOKURL: 'Facebook URL'
+    LOCALITY: Locality
+    PHONEWORK: 'Phone Work'
+    POSTALCODE: 'Postal Code'
+    REGION: Region
+    STREETADDRESS: 'Street Address'
+    TWITTERUSER: 'Twitter user'
+  BuyBookPage:
+    DESCRIPTION: 'Página de venta del libro'
+  ContactEmail:
+    SUBMITTERINFO: 'The following message was submitted to your site by'
+  ContactPage:
+    CELLPHONE: Cellphone
+    COMMENTS: 'What are you thinking? Tell me'
+    COMMENTSINPUT: 'Comments <em>*</em>'
+    DESCRIPTION: 'Contact form'
+    EMAIL: 'Email address'
+    EMAILSUBMISSIONSTO: 'Email submissions to'
+    NAME: 'We need your name'
+    NAMEINPUT: 'Name <em>*</em>'
+    OURADDRESS: 'Our Address'
+    PLURALNAME: 'Contact Pags'
+    SEND: Send
+    SINGULARNAME: 'Contact Page'
+    THANKYOUTEXT: 'Thank you text'
+    WEBSITECONTACTMESSAGE: 'Website Contact message'
+  DOArticlesCategoryHolderPage:
+    DESCRIPTION: 'List of categories for adding articles'
+  DOArticlesCategoryPage:
+    DESCRIPTION: 'Generic content page'
+  DospuntoceroCMSCore:
+    APIKEYSTAB: ApiKeys
+    GANALITYCSAPIKEY: 'Google Analitycs api key is needed for website tracking'
+    SITEDESCRIPTION: SiteDescription
+  EmpresasPage:
+    DESCRIPTION: 'Listado de las empresas que pertenecen al club'
+  ErrorPage:
+    DESCRIPTION: 'Custom content for different error cases (e.g. "Page not found")'
+  HomePage:
+    DESCRIPTION: 'This is the home of your website.'
+  Maintenance:
+    MAINTENANCE: 'Put the site into maintenance mode?'
+    MESSAGE: 'Site under maintenance'
+  Page:
+    DESCRIPTION: 'Generic content page'
+  QuickEmailForm:
+    EMAIL: Email
+    FROMOURWEBSITE: 'Contact from our website'
+    QUESTION: Question
+  RedirectorPage:
+    DESCRIPTION: 'Redirects to a different internal page'
+  SesionesPage:
+    DESCRIPTION: 'Página que agrupa las sesiones del club de innovación'
+  SiteTree:
+    DESCRIPTION: 'Generic content page'
+  VirtualPage:
+    DESCRIPTION: 'Displays the content of another page'
+  dospuntoceroCMS:
+    MAINTENANCE: 'site under maintenance'

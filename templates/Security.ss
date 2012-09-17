@@ -10,7 +10,11 @@
 	<div class="form">
 		$Content
 		$Form	
+<<<<<<< HEAD
 		$ClearReq
+=======
+		$ClearReq		
+>>>>>>> 14928ef4c466f948869be40af690a44c326ad209
 	</div>
 </body>
 </html>

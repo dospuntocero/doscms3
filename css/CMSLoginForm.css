@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* @override http://ga/dospuntoceroCMS/css/CMSLoginForm.css */
 
 /* @group clearfix */
@@ -6,6 +7,9 @@
 	float: left;
 	width: 20px;
 }
+=======
+/* @group clearfix */
+>>>>>>> 14928ef4c466f948869be40af690a44c326ad209
 .cf:after,
 .container:after,
 .Actions:after {
