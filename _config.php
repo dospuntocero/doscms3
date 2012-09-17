@@ -27,3 +27,5 @@ Object::add_extension('Date','SuperNiceDate');
 Object::add_extension('Page','ExtraImagesAndFiles');
 Object::add_extension('Attachment', 'Sortable');
 Object::add_extension('ExtraImage', 'Sortable');
+
+LeftAndMain::require_css('dospuntoceroCMS/css/dospuntoceroCMS.css');
