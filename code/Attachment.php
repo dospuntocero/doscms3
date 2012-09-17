@@ -5,4 +5,6 @@ class Attachment extends File {
 		'Page' => 'Page',
 	);
 
+	public static $default_sort = "Sorting ASC";
+
 }
