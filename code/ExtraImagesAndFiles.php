@@ -16,7 +16,7 @@ class ExtraImagesAndFiles extends DataExtension {
 		}
 	}
 
-	function getAdditionalImages(){
+	function getExtraImages(){
 		$Image = $this->owner->Images();
 		$set = new ArrayList();
 		$c=1;
@@ -33,6 +33,7 @@ class ExtraImagesAndFiles extends DataExtension {
 	}
 
 	public function updateCMSFields(FieldList $fields) {
+
 		$ImagesAndFiles = _t('Page.IMAGESANDFILES',"Images and Files");
 
 

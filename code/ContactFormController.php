@@ -5,25 +5,21 @@ class ContactForm_Controller extends Page_Controller {
 	function init() {
 		parent::init();
 		Requirements::css("mysite/css/Form.css");
-		Requirements::javascript("mysite/javascript/thirdparty/jquery.js");
-		Requirements::javascript("mysite/javascript/thirdparty/jquery-validate/jquery.validate.pack.js");
-		Requirements::javascript("mysite/javascript/thirdparty/jquery-validate/localization/messages_es.js");
+		Requirements::javascript(THIRDPARTY_DIR."/jquery/jquery.min.js");
+		Requirements::javascript(THIRDPARTY_DIR."/jquery-validate/jquery.validate.pack.js");
+		Requirements::javascript(THIRDPARTY_DIR."/jquery-validate/localization/messages_es.js");
 
 		Requirements::customScript('
-		jQuery(document).ready(function() {
-			jQuery("#Form_ContactForm").validate({
-				rules: {
-					Name: "required",
-					Email: {
-						required: true,
-							email: true
-							},
-						Comments: {
+			jQuery(document).ready(function() {
+				jQuery("#Form_ContactForm").validate({
+					rules: {
+						Name: "required",
+						Email: {
 							required: true,
-								minlength: 20
-							}
-						},
-						messages: {
+							email: true
+						}
+					},
+					messages: {
 						Name: "'._t("ContactPage.NAME","We need your name").'",
 						Email: "'._t("ContactPage.EMAIL","Without your real email address, we can't reach you").'",
 						Comments: "'._t("ContactPage.COMMENTS","What are you thinking? Tell me").'"
@@ -31,7 +27,7 @@ class ContactForm_Controller extends Page_Controller {
 				});
 			});
 		');
-	 }	
+	}	
 
 	function ContactForm() {
 	// Create fields
