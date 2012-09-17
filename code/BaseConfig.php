@@ -14,28 +14,19 @@ class BaseConfig extends DataExtension {
 		"Email" => "Varchar(125)",
 		'GAnalitycsApiKey' => 'Varchar(255)',
 		"FacebookURL" => 'Varchar(255)',
-<<<<<<< HEAD
-		"TwitterUser" => "Varchar(255)"
-=======
 		"TwitterUser" => "Varchar(255)",
 		"LinkedInURL" => 'Varchar(255)',
 		"SlideshareURL" => "Varchar(255)",
-		"YoutubeURL" => "Varchar(255)",
-		
->>>>>>> 14928ef4c466f948869be40af690a44c326ad209
+		"YoutubeURL" => "Varchar(255)"
 	);
 
 	public function updateCMSFields(FieldList $fields) {
 		
 		$fields->removeByName('Theme');
 
-<<<<<<< HEAD
+
 		// $contactDetailsTab = _t('DospuntoceroCMSCore.CONTACTDETAILSTAB',"ContactDetails");			
 		$APIKeysTab = _t('DospuntoceroCMSCore.APIKEYSTAB',"ApiKeys");			
-=======
-		// $contactDetailsTab = _t('DospuntoceroCMSCore.CONTACTDETAILSTAB',"ContactDetails");
-		$APIKeysTab = _t('DospuntoceroCMSCore.APIKEYSTAB',"ApiKeys");
->>>>>>> 14928ef4c466f948869be40af690a44c326ad209
 		$editor = new HTMLEditorField('SiteDescription', _t('DospuntoceroCMSCore.SITEDESCRIPTION',"SiteDescription"));
 		$editor->setRows(5);
 
@@ -57,13 +48,9 @@ class BaseConfig extends DataExtension {
 	$fields->addFieldsToTab('Root.Social', array(
 		new TextField('FacebookURL',_t('BaseConfig.FACEBOOKURL',"Facebook URL")),
 		new TextField('TwitterUser',_t('BaseConfig.TWITTERUSER',"Twitter user")),
-<<<<<<< HEAD
-=======
 		new TextField('LinkedInURL',_t('BaseConfig.LINKEDINURL',"LinkedIn URL")),
 		new TextField('SlideshareURL',_t('BaseConfig.SLIDESHAREURL',"Slideshare URL")),
 		new TextField('YoutubeURL',_t('BaseConfig.YOUTUBEURL',"Youtube URL")),
-
->>>>>>> 14928ef4c466f948869be40af690a44c326ad209
 	));
 
 	}
