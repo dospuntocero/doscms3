@@ -3,7 +3,7 @@
 class ExtraImagesAndFiles extends DataExtension {
 
 	static $db = array(
-		"UseGalleriaPlugin" => "Boolean"
+		"ShowGalleryInstead" => "Boolean"
 	);
 
 	static $many_many = array(
@@ -43,9 +43,11 @@ class ExtraImagesAndFiles extends DataExtension {
 		$UploadField2->setFolderName("Attachments");
 		$UploadField3 = new SortableUploadField('Images', _t('Page.IMAGES',"Images"));
 		$UploadField3->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
+		$UploadField3->setFolderName("Images");
 		$fields->addFieldToTab("Root.".$ImagesAndFiles, $UploadField3);
-		$fields->addFieldToTab("Root.".$ImagesAndFiles, new CheckboxField('UseGalleriaPlugin',_t('ExtraImagesAndFiles.USEGALLERIAPLUGIN',"Use galleria plugin")));
+		$fields->addFieldToTab("Root.".$ImagesAndFiles, new CheckboxField('ShowGalleryInstead',_t('ExtraImagesAndFiles.SHOWGALLERYINSTEAD',"Show Gallery Instead")));
 		$fields->addFieldToTab("Root.".$ImagesAndFiles, $UploadField2);
+
 	}
 
 	function contentControllerInit(){
