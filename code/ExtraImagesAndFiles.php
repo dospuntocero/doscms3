@@ -37,17 +37,21 @@ class ExtraImagesAndFiles extends DataExtension {
 	}
 
 	public function updateCMSFields(FieldList $fields) {
+		$fields->removeFieldFromTab("Root","ShowGalleryInstead");
 		$fields->removeFieldFromTab("Root","Images");
-		$ImagesAndFiles = _t('Page.IMAGESANDFILES',"Images and Files");
-		$UploadField2 = new SortableUploadField('Attachments', _t('Page.ATTACHMENTS',"Attachments"));
-		$UploadField2->setFolderName("Attachments");
-		$UploadField3 = new SortableUploadField('Images', _t('Page.IMAGES',"Images"));
-		$UploadField3->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
-		$UploadField3->setFolderName("Images");
-		$fields->addFieldToTab("Root.".$ImagesAndFiles, $UploadField3);
-		$fields->addFieldToTab("Root.".$ImagesAndFiles, new CheckboxField('ShowGalleryInstead',_t('ExtraImagesAndFiles.SHOWGALLERYINSTEAD',"Show Gallery Instead")));
-		$fields->addFieldToTab("Root.".$ImagesAndFiles, $UploadField2);
-
+		$fields->removeFieldFromTab("Root","Attachments");
+		
+		if ($this->owner->ID) {
+			$ImagesAndFiles = _t('Page.IMAGESANDFILES',"Images and Files");
+			$UploadField2 = new SortableUploadField('Attachments', _t('Page.ATTACHMENTS',"Attachments"));
+			$UploadField2->setFolderName("Attachments");
+			$UploadField3 = new SortableUploadField('Images', _t('Page.IMAGES',"Images"));
+			$UploadField3->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
+			$UploadField3->setFolderName("Images");
+			$fields->addFieldToTab("Root.".$ImagesAndFiles, $UploadField3);
+			$fields->addFieldToTab("Root.".$ImagesAndFiles, new CheckboxField('ShowGalleryInstead',_t('ExtraImagesAndFiles.SHOWGALLERYINSTEAD',"Show Gallery Instead")));
+			$fields->addFieldToTab("Root.".$ImagesAndFiles, $UploadField2);
+		}
 	}
 
 	function contentControllerInit(){
