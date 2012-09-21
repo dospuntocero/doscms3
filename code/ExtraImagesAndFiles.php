@@ -57,9 +57,9 @@ class ExtraImagesAndFiles extends DataExtension {
 	function contentControllerInit(){
 		if ($this->owner->Images()->count() > 1 && $this->owner->UseGalleriaPlugin == 1) {
 			Requirements::javascript(THIRDPARTY_DIR."/jquery/jquery.min.js");
-			Requirements::javascript("dospuntoceroCMS/js/galleria/galleria-1.2.8.min.js");
-			Requirements::javascript("dospuntoceroCMS/js/galleria/themes/classic/galleria.classic.js");
-			Requirements::css("dospuntoceroCMS/js/galleria/themes/classic/galleria.classic.css");
+			Requirements::javascript(DOSJS."/galleria/galleria-1.2.8.min.js");
+			Requirements::javascript(DOSJS."/galleria/themes/classic/galleria.classic.js");
+			Requirements::css(DOSJS."/galleria/themes/classic/galleria.classic.css");
 		}
 	}
 }

@@ -1,5 +1,9 @@
 <?php 
 
+define('DOSJS', 'dospuntoceroCMS/js');
+
+
+
 SSViewer::set_source_file_comments(false);
 Validator::set_javascript_validation_handler('none');
 CMSMenu::add_link('ReBuild', 'Rebuild!', "/dev/build?returnURL=/admin");
