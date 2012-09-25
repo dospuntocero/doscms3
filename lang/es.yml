@@ -1,0 +1,69 @@
+es:
+  AddContent:
+    BULKIMPORT: 'Importar páginas'
+    DELETEEXISTING: 'Borrar todo el contenido existente?'
+    PUBLISHALL: 'Publicar todo luego de la importación?'
+    SITEIMPORTED: '<p>Gracias!, el sitio ha sido importado.</p>'
+  BaseConfig:
+    CELLPHONE: Celular
+    COUNTRYNAME: 'País'
+    EMAIL: Email
+    FACEBOOKURL: ' URL de Facebook'
+    LOCALITY: Localidad
+    PHONEWORK: 'Teléfono trabajo'
+    POSTALCODE: 'Código Postal'
+    REGION: Región
+    STREETADDRESS: 'Dirección'
+    TWITTERUSER: 'Usuario de Twitter'
+  BuyBookPage:
+    DESCRIPTION: 'Página de venta del libro'
+  ContactEmail:
+    SUBMITTERINFO: 'El siguiente mensaje ha sido enviado a tu sitio por'
+  ContactPage:
+    CELLPHONE: Celular
+    COMMENTS: '¿Qué estás pensando? cuéntanos!'
+    COMMENTSINPUT: 'Comentarios <em>*</em>'
+    DESCRIPTION: 'Formulario de contacto'
+    EMAIL: 'Dirección de correo'
+    EMAILSUBMISSIONSTO: 'Enviar las consultas a'
+    NAME: 'Necesitamos tu nombre'
+    NAMEINPUT: 'Nombre <em>*</em>'
+    OURADDRESS: 'Dirección'
+    SEND: Enviar
+    CONTACT: Contacto
+    SINGULARNAME: 'Página de contacto'
+    THANKYOUTEXT: 'Texto de agradecimiento'
+    WEBSITECONTACTMESSAGE: 'Mensaje desde el sitio web'
+  DOArticlesCategoryHolderPage:
+    DESCRIPTION: 'Contiene las categorías donde se añadirán los artículos'
+  DOArticlesCategoryPage:
+    DESCRIPTION: 'Página de categoría para artículos'
+  DospuntoceroCMSCore:
+    APIKEYSTAB: Llaves de programador
+    GANALITYCSAPIKEY: 'Para poder revisar la actividad del sitio, se requiere una cuenta en Google Analitycs'
+    SITEDESCRIPTION: Descripción del sitio
+  EmpresasPage:
+    DESCRIPTION: 'Listado de las empresas que pertenecen al club'
+  ErrorPage:
+    DESCRIPTION: 'Respuesta para diferentes errores de servidor (ejemplo: "Página no encontrada")'
+  HomePage:
+    DESCRIPTION: 'Esta es la página inicial del sitio.'
+  Maintenance:
+    MAINTENANCE: 'Poner el sitio en mantenimiento?'
+    MESSAGE: 'Sitio en mantenimiento, por favor vuelva pronto'
+  Page:
+    DESCRIPTION: 'Página de contenido genérica'
+  QuickEmailForm:
+    EMAIL: Email
+    FROMOURWEBSITE: 'Alguien quiere contactarnos desde el sitio web'
+    QUESTION: Pregunta
+  RedirectorPage:
+    DESCRIPTION: 'Redirige a una página interna del sitio'
+  SesionesPage:
+    DESCRIPTION: 'Página que agrupa las sesiones del club de innovación'
+  SiteTree:
+    DESCRIPTION: 'Página de contenido genérica'
+  VirtualPage:
+    DESCRIPTION: 'Muestra el contenido de otra página'
+  dospuntoceroCMS:
+    MESSAGE: 'Sitio en mantenimiento, por favor vuelva pronto'
