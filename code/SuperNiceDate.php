@@ -5,6 +5,9 @@ class SuperNiceDate extends DataExtension {
 			case 'es_ES':
 			setlocale(LC_ALL, 'es_ES');
 			return $this->owner->FormatI18N("%d de %B de %Y");
+			case 'es_CL':
+			setlocale(LC_ALL, 'es_CL');
+			return $this->owner->FormatI18N("%d de %B de %Y");
 			case 'en_US':
 			setlocale(LC_ALL, 'en_US');
 			return $this->owner->FormatI18N("%B %d, %Y");
