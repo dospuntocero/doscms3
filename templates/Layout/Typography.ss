@@ -1,1 +1,1 @@
-<% include Typography %>
+<% include TypographycStyles %>
