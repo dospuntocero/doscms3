@@ -67,3 +67,22 @@ es:
     DESCRIPTION: 'Muestra el contenido de otra página'
   dospuntoceroCMS:
     MESSAGE: 'Sitio en mantenimiento, por favor vuelva pronto'
+
+
+
+  UploadField:
+    ATTACHFILE: 'Adjuntar archivo'
+    ATTACHFILES: 'Adjuntar archivos'
+    DELETE: 'Borrar archivo'
+    DELETEINFO: 'Borrar permanentemente este archivo desde el almacen de archivos'
+    DROPFILE: 'Arrastrar archivo'
+    DROPFILES: 'Arrastrar archivos'
+    FROMCOMPUTER: 'Desde el computador'
+    FROMCOMPUTERINFO: 'Subir desde tu computador'
+    MAXNUMBEROFFILESSHORT: 'Solo puedes subir {count} archivos'
+    STARTALL: 'Comenzar todos'
+    STARTALLINFO: 'Subir todos los archivos'
+  dospuntoceroCMS:
+    MAINTENANCE: 'site under maintenance'
+    MESSAGE: 'Sitio en mantenimiento, por favor vuelva pronto'
+
