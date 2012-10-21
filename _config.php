@@ -1,6 +1,7 @@
 <?php 
 
 define('DOSJS', 'dospuntoceroCMS/js');
+define('DOSCSS', 'dospuntoceroCMS/css');
 
 
 

@@ -4,66 +4,66 @@ en:
     DELETEEXISTING: 'Clear out all existing content?'
     PUBLISHALL: 'Publish everything after the import?'
     SITEIMPORTED: '<p>Thanks! Your site tree has been imported.</p>'
+  Attachment:
+    PLURALNAME: Files
+    SINGULARNAME: File
   BaseConfig:
     CELLPHONE: Cellphone
     COUNTRYNAME: 'Country Name'
     EMAIL: Email
     FACEBOOKURL: 'Facebook URL'
+    LINKEDINURL: 'LinkedIn URL'
     LOCALITY: Locality
     PHONEWORK: 'Phone Work'
     POSTALCODE: 'Postal Code'
     REGION: Region
+    SLIDESHAREURL: 'Slideshare URL'
     STREETADDRESS: 'Street Address'
     TWITTERUSER: 'Twitter user'
-  BuyBookPage:
-    DESCRIPTION: 'Página de venta del libro'
-  ContactEmail:
-    SUBMITTERINFO: 'The following message was submitted to your site by'
-  ContactPage:
-    CELLPHONE: Cellphone
-    COMMENTS: 'What are you thinking? Tell me'
-    COMMENTSINPUT: 'Comments <em>*</em>'
-    DESCRIPTION: 'Contact form'
-    EMAIL: 'Email address'
-    EMAILSUBMISSIONSTO: 'Email submissions to'
-    NAME: 'We need your name'
-    NAMEINPUT: 'Name <em>*</em>'
-    OURADDRESS: 'Our Address'
-    PLURALNAME: 'Contact Pags'
-    SEND: Send
-    SINGULARNAME: 'Contact Page'
-    THANKYOUTEXT: 'Thank you text'
-    WEBSITECONTACTMESSAGE: 'Website Contact message'
-  DOArticlesCategoryHolderPage:
-    DESCRIPTION: 'List of categories for adding articles'
-  DOArticlesCategoryPage:
-    DESCRIPTION: 'Generic content page'
+    YOUTUBEURL: 'Youtube URL'
+  DosNavigator:
+    CMSDASHBOARD: Dashboard
+    CMSPAGES: CMS
+    DEVELOPER: Developer
+    DEVELOPERACTIONSANDTASKS: 'Developer Actions and Tasks'
+    DEVMODE: 'Developer mode'
+    EDITOR: Editor
+    EDITTHISPAGE: 'Edit this page'
+    FLUSHCACHE: 'Flush cache'
+    LOGOUT: 'Log out'
+    REBUILDDATABASE: 'Rebuild Database'
   DospuntoceroCMSCore:
     APIKEYSTAB: ApiKeys
     GANALITYCSAPIKEY: 'Google Analitycs api key is needed for website tracking'
     SITEDESCRIPTION: SiteDescription
-  EmpresasPage:
-    DESCRIPTION: 'Listado de las empresas que pertenecen al club'
-  ErrorPage:
-    DESCRIPTION: 'Custom content for different error cases (e.g. "Page not found")'
-  HomePage:
-    DESCRIPTION: 'This is the home of your website.'
+  ExtraImage:
+    PLURALNAME: Files
+    SINGULARNAME: File
+  ExtraImagesAndFiles:
+    SHOWGALLERYINSTEAD: 'Show Gallery Instead'
+  File:
+    INVALIDEXTENSIONSHORT: 'Extension is not allowed'
+    TOOLARGESHORT: 'Filesize exceeds {size}'
+  FileIFrameField:
+    ATTACHONCESAVED2: 'Files can be attached once you have saved the record for the first time.'
   Maintenance:
     MAINTENANCE: 'Put the site into maintenance mode?'
     MESSAGE: 'Site under maintenance'
   Page:
-    DESCRIPTION: 'Generic content page'
-  QuickEmailForm:
-    EMAIL: Email
-    FROMOURWEBSITE: 'Contact from our website'
-    QUESTION: Question
-  RedirectorPage:
-    DESCRIPTION: 'Redirects to a different internal page'
-  SesionesPage:
-    DESCRIPTION: 'Página que agrupa las sesiones del club de innovación'
-  SiteTree:
-    DESCRIPTION: 'Generic content page'
-  VirtualPage:
-    DESCRIPTION: 'Displays the content of another page'
+    ATTACHMENTS: Attachments
+    IMAGES: Images
+    IMAGESANDFILES: 'Images and Files'
+  UploadField:
+    ATTACHFILE: 'Attach a file'
+    ATTACHFILES: 'Attach files'
+    DELETE: 'Delete from files'
+    DELETEINFO: 'Permanently delete this file from the file store'
+    DROPFILE: 'drop a file'
+    DROPFILES: 'drop files'
+    FROMCOMPUTER: 'From your computer'
+    FROMCOMPUTERINFO: 'Upload from your computer'
+    MAXNUMBEROFFILESSHORT: 'Can only upload {count} files'
+    STARTALL: 'Start all'
+    STARTALLINFO: 'Start all uploads'
   dospuntoceroCMS:
     MAINTENANCE: 'site under maintenance'
