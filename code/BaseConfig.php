@@ -2,56 +2,47 @@
 
 class BaseConfig extends DataExtension {
 
-	static $db = array(
-		'SiteDescription' => 'HTMLText',
-		"StreetAddress" => "Varchar(255)",
-		"Locality" => "Varchar(125)",
-		"Region" => "Varchar(125)",
-		"PostalCode" => "Varchar(125)",
-		"CountryName" => "Varchar(125)",
-		"PhoneWork" => "Varchar(125)",
-		"CellPhone" => "Varchar(125)",
-		"Email" => "Varchar(125)",
-		'GAnalitycsApiKey' => 'Varchar(255)',
-		"FacebookURL" => 'Varchar(255)',
-		"TwitterUser" => "Varchar(255)",
-		"LinkedInURL" => 'Varchar(255)',
-		"SlideshareURL" => "Varchar(255)",
-		"YoutubeURL" => "Varchar(255)"
-	);
+  function extraStatics($class = null, $extension = null) {
+    return array(
+      'db' => array(
+        'GACode' => 'Varchar(16)',
+        'FacebookURL' => 'Varchar(256)', // multitude of ways to link to Facebook accounts, best to leave it open.
+        'TwitterUsername' => 'Varchar(16)', // max length of Twitter username 15
+        'AddThisProfileID' => 'Varchar(32)',
+        'FooterLogoLink' => 'Varchar(255)',
+        'FooterLogoDescription' => 'Varchar(255)'
+      ),
+      'has_one' => array(
+        'Logo' => 'Image',
+        'FooterLogo' => 'Image'
+      )
+    );
+  }
 
-	public function updateCMSFields(FieldList $fields) {
-		
-		$fields->removeByName('Theme');
+  function updateCMSFields(FieldList $fields) {
+    $fields->addFieldToTab('Root.Main', $gaCode = new TextField('GACode', 'Google Analytics account'));
+    $gaCode->setRightTitle('Account number to be used all across the site (in the format <strong>UA-XXXXX-X</strong>)');
 
+    $fields->addFieldToTab('Root.Main', $facebookURL = new TextField('FacebookURL', 'Facebook UID or username'));
+    $facebookURL->setRightTitle('Facebook link (everything after the "http://facebook.com/", eg http://facebook.com/<strong>username</strong> or http://facebook.com/<strong>pages/108510539573</strong>)');
 
-		// $contactDetailsTab = _t('DospuntoceroCMSCore.CONTACTDETAILSTAB',"ContactDetails");			
-		$APIKeysTab = _t('DospuntoceroCMSCore.APIKEYSTAB',"ApiKeys");			
-		$editor = new HTMLEditorField('SiteDescription', _t('DospuntoceroCMSCore.SITEDESCRIPTION',"SiteDescription"));
-		$editor->setRows(5);
+    $fields->addFieldToTab('Root.Main', $twitterUsername = new TextField('TwitterUsername', 'Twitter username'));
+    $twitterUsername->setRightTitle('Twitter username (eg, http://twitter.com/<strong>username</strong>)');
 
-		// $fields->addFieldsToTab('Root.'.$contactDetailsTab, array(
-		$fields->addFieldsToTab('Root.Main', array(
-			new TextField('GAnalitycsApiKey',_t('DospuntoceroCMSCore.GANALITYCSAPIKEY',"Google Analitycs api key is needed for website tracking")),
-			$editor
-		));
-	$fields->addFieldsToTab('Root.Location', array(
-		new TextField('StreetAddress',_t('BaseConfig.STREETADDRESS',"Street Address")),
-		new TextField('Locality',_t('BaseConfig.LOCALITY',"Locality")),
-		new TextField('Region',_t('BaseConfig.REGION',"Region")),
-		new TextField('PostalCode',_t('BaseConfig.POSTALCODE',"Postal Code")),
-		new TextField('CountryName',_t('BaseConfig.COUNTRYNAME',"Country Name")),
-		new TextField('PhoneWork',_t('BaseConfig.PHONEWORK',"Phone Work")),
-		new TextField('CellPhone',_t('BaseConfig.CELLPHONE',"Cellphone")),
-		new TextField('Email',_t('BaseConfig.EMAIL',"Email"))
-	));
-	$fields->addFieldsToTab('Root.Social', array(
-		new TextField('FacebookURL',_t('BaseConfig.FACEBOOKURL',"Facebook URL")),
-		new TextField('TwitterUser',_t('BaseConfig.TWITTERUSER',"Twitter user")),
-		new TextField('LinkedInURL',_t('BaseConfig.LINKEDINURL',"LinkedIn URL")),
-		new TextField('SlideshareURL',_t('BaseConfig.SLIDESHAREURL',"Slideshare URL")),
-		new TextField('YoutubeURL',_t('BaseConfig.YOUTUBEURL',"Youtube URL")),
-	));
+    $fields->addFieldToTab('Root.Main', $addThisID = new TextField('AddThisProfileID', 'AddThis Profile ID'));
+    $addThisID->setRightTitle('Profile ID to be used all across the site (in the format <strong>ra-XXXXXXXXXXXXXXXX</strong>)');
 
-	}
+    $fields->addFieldToTab('Root.Logos', $logoField = new UploadField('Logo', 'Logo, to appear in the top left.'));
+    $logoField->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
+    $logoField->setConfig('allowedMaxFileNumber', 1);
+
+    $fields->addFieldToTab('Root.Logos', $footerLogoField = new UploadField('FooterLogo', 'Footer logo, to appear in the bottom right.'));
+    $footerLogoField->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
+    $footerLogoField->setConfig('allowedMaxFileNumber', 1);
+
+    $fields->addFieldToTab('Root.Logos', $footerLink = new TextField('FooterLogoLink', 'Footer Logo link'));
+    $footerLink->setRightTitle('Please include the protocol (ie, http:// or https://) unless it is an internal link.');
+
+    $fields->addFieldToTab('Root.Logos', new TextField('FooterLogoDescription', 'Footer Logo description'));
+  }
 }
