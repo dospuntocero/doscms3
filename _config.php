@@ -7,7 +7,6 @@ define('DOSCSS', 'dospuntoceroCMS/css');
 
 SSViewer::set_source_file_comments(false);
 Validator::set_javascript_validation_handler('none');
-CMSMenu::add_link('ReBuild', 'Rebuild!', "/dev/build?returnURL=/admin");
 
 CMSMenu::remove_menu_item("CommentAdmin");
 CMSMenu::remove_menu_item("ReportAdmin");
