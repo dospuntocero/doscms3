@@ -49,7 +49,7 @@ class ExtraImagesAndFiles extends DataExtension {
 			$UploadField3->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
 			$UploadField3->setFolderName("Images");
 			$fields->addFieldToTab("Root.".$ImagesAndFiles, $UploadField3);
-			$fields->addFieldToTab("Root.".$ImagesAndFiles, new CheckboxField('ShowGalleryInstead',_t('ExtraImagesAndFiles.SHOWGALLERYINSTEAD',"Show Gallery Instead")));
+//			$fields->addFieldToTab("Root.".$ImagesAndFiles, new CheckboxField('ShowGalleryInstead',_t('ExtraImagesAndFiles.SHOWGALLERYINSTEAD',"Show Gallery Instead")));
 			$fields->addFieldToTab("Root.".$ImagesAndFiles, $UploadField2);
 		}
 	}
