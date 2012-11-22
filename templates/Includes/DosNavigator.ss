@@ -1,7 +1,7 @@
 <% if CurrentUser %>
 	<% if canEdit %>
 
-	<p style="position:fixed;bottom:0;background:#fff;border-top:1px solid #ccc;margit-top:10px; width:100%;padding:5px;">
+	<p style="position:fixed;bottom:0;background:#fff;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margit-top:10px; width:100%;padding:5px;">
 		<strong><% _t('DosNavigator.EDITOR','Editor') %></strong> :
 			<a href="/admin/pages"><% _t('DosNavigator.CMSPAGES','CMS') %></a>
 		|	<a href="/admin/dashboard"><% _t('DosNavigator.CMSDASHBOARD','Dashboard') %></a>
