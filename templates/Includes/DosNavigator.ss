@@ -1,7 +1,10 @@
 <% if CurrentUser %>
 	<% if canEdit %>
-
-	<p style="position:fixed;bottom:0;background:#fff;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margit-top:10px; width:100%;padding:5px;">
+  <% require css(dospuntoceroCMS/css/dosNav.css) %>
+	<div id="dosNav">
+    <div class="dosButton">
+      
+    </div>
 		<strong><% _t('DosNavigator.EDITOR','Editor') %></strong> :
 			<a href="/admin/pages"><% _t('DosNavigator.CMSPAGES','CMS') %></a>
 		|	<a href="/admin/dashboard"><% _t('DosNavigator.CMSDASHBOARD','Dashboard') %></a>
@@ -13,6 +16,6 @@
 	|	<a href="$Link?isDev=1"><% _t('DosNavigator.DEVMODE','Developer mode') %></a>
 	|	<a href="dev/"><% _t('DosNavigator.DEVELOPERACTIONSANDTASKS','Developer Actions and Tasks') %></a>
 	|	<a href="dev/build/"><% _t('DosNavigator.REBUILDDATABASE','Rebuild Database') %></a>
-	</p>
+  </div>
 	<% end_if %>
 <% end_if %>
