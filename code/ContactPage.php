@@ -5,7 +5,7 @@
 class ContactPage extends Page
 {
 
-	static $icon = "dospuntoceroCMS/images/email.png";    
+	static $icon = "doscms3/images/email.png";    
 	static $description = 'Contact form';
     
 	static $db = array(

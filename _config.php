@@ -1,7 +1,7 @@
 <?php 
 
-define('DOSJS', 'dospuntoceroCMS/js');
-define('DOSCSS', 'dospuntoceroCMS/css');
+define('DOSJS', 'doscms3/js');
+define('DOSCSS', 'doscms3/css');
 
 
 
@@ -33,4 +33,4 @@ Object::add_extension('Page','ExtraImagesAndFiles');
 Object::add_extension('Attachment', 'Sortable');
 Object::add_extension('ExtraImage', 'Sortable');
 
-LeftAndMain::require_css('dospuntoceroCMS/css/dospuntoceroCMS.css');
+LeftAndMain::require_css('doscms3/css/dospuntoceroCMS.css');

@@ -1,5 +1,5 @@
 {
-    "name": "silverstripe/dospuntoceroCMS",
+    "name": "silverstripe/doscms3",
     "description": "Simplifies the complete CMS backend avoiding extra tabs and any stuff that can scare a client. ",
     "type": "silverstripe-module",
     "keywords": ["silverstripe", "CMS", "CMS theme"],
@@ -14,5 +14,6 @@
     {
         "silverstripe/framework": "3.*",
         "silverstripe/cms": "3.*"
-    }
+    },
+    "version": "1.0.0"    
 }

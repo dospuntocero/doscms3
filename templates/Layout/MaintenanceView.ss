@@ -6,7 +6,7 @@
 	</head>
 	<body bgcolor="#f2f2f2">
 		<center>	
-			<img src="dospuntoceroCMS/images/splash.jpg"/>
+			<img src="doscms3/images/splash.jpg"/>
 		</center>
 	</body>
 </html>
