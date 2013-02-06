@@ -14,5 +14,6 @@
     {
         "silverstripe/framework": "3.*",
         "silverstripe/cms": "3.*"
-    }
+    },
+    "version": "1.0.0"    
 }
