@@ -1,15 +1,16 @@
 <?php 
 
 define('DOSJS', 'dospuntoceroCMS/js');
+define('DOSCSS', 'dospuntoceroCMS/css');
 
 
 
 SSViewer::set_source_file_comments(false);
-Validator::set_javascript_validation_handler('none');
-CMSMenu::add_link('ReBuild', 'Rebuild!', "/dev/build?returnURL=/admin");
 
 CMSMenu::remove_menu_item("CommentAdmin");
 CMSMenu::remove_menu_item("ReportAdmin");
+CMSMenu::remove_menu_item("AssetAdmin");
+
 CMSMenu::remove_menu_item("SecurityAdmin");
 CMSMenu::remove_menu_item("Help");
 

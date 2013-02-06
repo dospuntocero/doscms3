@@ -49,17 +49,8 @@ class ExtraImagesAndFiles extends DataExtension {
 			$UploadField3->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
 			$UploadField3->setFolderName("Images");
 			$fields->addFieldToTab("Root.".$ImagesAndFiles, $UploadField3);
-			$fields->addFieldToTab("Root.".$ImagesAndFiles, new CheckboxField('ShowGalleryInstead',_t('ExtraImagesAndFiles.SHOWGALLERYINSTEAD',"Show Gallery Instead")));
 			$fields->addFieldToTab("Root.".$ImagesAndFiles, $UploadField2);
 		}
 	}
 
-	function contentControllerInit(){
-		if ($this->owner->Images()->count() > 1 && $this->owner->UseGalleriaPlugin == 1) {
-			Requirements::javascript(THIRDPARTY_DIR."/jquery/jquery.min.js");
-			Requirements::javascript(DOSJS."/galleria/galleria-1.2.8.min.js");
-			Requirements::javascript(DOSJS."/galleria/themes/classic/galleria.classic.js");
-			Requirements::css(DOSJS."/galleria/themes/classic/galleria.classic.css");
-		}
-	}
 }
